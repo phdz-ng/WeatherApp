@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+<script defer src="main.js"></script></head>
+<body>
+    <main class="main">
+        <header class="input-container">
+            <input id="location-search" type="text" placeholder="Search a city">
+            <button class="search-btn">
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+            </button>
+        </header>
+
+        <section class="first-prompt">
+            <h1>Search your destination</h1>
+            <img id="forecast-icon" src="eadd04ac23b80912873f.svg" alt="">
+        </section>
+
+        <section class="buttons">
+            
+
+        </section>
+
+        <section class="weather-container" style="display: none;">
+            <div class="location-date-container">
+                <div class="location">
+                    <span class="material-symbols-outlined" id="location-icon">
+                        location_on
+                    </span>
+                    <h4 class="location-label"></h4>
+                </div>
+                <h5 class="today-date-label"></h5>
+            </div>
+            <div class="weather-overview">
+                <div class="weather-div1">
+                    
+                    <div class="weather-overview-info">
+                      <h1 class="temp-label"></h1>
+                      <h3 class="conditions-label"></h2>
+                    </div>
+                    <img id="weather-overview-icon">
+                </div>
+                
+                <div class="weather-details">
+                    <div class="condition-item">
+                        <span class="material-symbols-outlined">
+                            water_drop
+                        </span>
+                        <div class="condition-info">
+                            <h5 class="humidity-label">Humidity</h5>
+                            <h5 class="humidity-value"></h5>
+                        </div>
+                    </div>
+                    <div class="condition-item">
+                        <span class="material-symbols-outlined">
+                            device_thermostat
+                        </span>
+                        <div class="condition-info">
+                            <h5 class="feesl-like-label">Feels like</h5>
+                            <h5 class="feels-like-value"></h5>
+                        </div>
+                    </div>    
+                    <div class="condition-item">
+                        <span class="material-symbols-outlined">
+                            air
+                        </span>
+                        <div class="condition-info">
+                            <h5 class="wind-label">Wind Speed</h5>
+                            <h5 class="wind-value"></h5>
+                        </div>
+                    </div>
+                </div>
+
+               
+
+           
+        </section>
+
+        <section class="forecast-container" style="display: none;">
+            <!-- <div class="forecast-item">
+                <h5 class="forecast-date regular-txt">
+                    21 Feb
+                </h5>
+                <img id="forecast-icon" src="/public/icons/clear-day.svg" alt="">
+            </div>
+
+            <div class="forecast-item">
+                <h5 class="forecast-date regular-txt">
+                    21 Feb
+                </h5>
+                <img id="forecast-icon" src="/public/icons/clear-day.svg" alt="">
+            </div>
+
+            <div class="forecast-item">
+                <h5 class="forecast-date regular-txt">
+                    21 Feb
+                </h5>
+                <img id="forecast-icon" src="/public/icons/clear-day.svg" alt="">
+            </div>
+
+            <div class="forecast-item">
+                <h5 class="forecast-date regular-txt">
+                    21 Feb
+                </h5>
+                <img id="forecast-icon" src="/public/icons/clear-day.svg" alt="">
+            </div>
+
+            <div class="forecast-item">
+                <h5 class="forecast-date regular-txt">
+                    21 Feb
+                </h5>
+                <img id="forecast-icon" src="/public/icons/clear-day.svg" alt="">
+            </div> -->
+            
+        </section>
+    </main>
+
+    
+</body>
+</html>
