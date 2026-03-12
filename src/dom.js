@@ -3,7 +3,6 @@ import { weatherData } from "./DataWork/processData.js";
 
 const firstPrompt = document.querySelector(".first-prompt")
 const WeatherContainer = document.querySelector('.weather-container')
-const forecastContainer = document.querySelector('.forecast-container')
 const tempValue = document.querySelector(".temp-label");
 const conditionsLabel = document.querySelector(".conditions-label");
 const humidityValue = document.querySelector(".humidity-value");
@@ -52,7 +51,7 @@ async function fetchForecast(location) {
             conditions,
             temp,
             icon,
-            iconPath: `./icons/${icon}`
+            iconPath: `icons/${icon}`
         })
 
     }
@@ -80,7 +79,7 @@ export async function renderWeather(location) {
     humidityValue.textContent = data.humidity + '%'
     feelsLike.textContent = data.feelslike + '°C'
     todayLabel.textContent = getTodate()
-    weatherOverviewIcon.src = `./icons/${fetchWeatherIcon(data.icon)}`
+    weatherOverviewIcon.src = `icons/${fetchWeatherIcon(data.icon)}`
 
     const forecast7days = await fetchForecast(location)
     ForecastContainer.innerHTML = ''
