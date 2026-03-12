@@ -1,0 +1,174 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background: url(/assets/livia-rpryWTMTcSc-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(1px);
+  color: white;
+}
+
+body::before {
+  width: 100%;
+  height: 100dvh;
+  background: rgb(0 0 0 / 0.15);
+  backdrop-filter: blur(15px);
+}
+
+.first-prompt {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 30px;
+  margin-top: 30px;
+}
+
+
+.main {
+  width: 350px;
+  height: 600px;
+  
+  z-index: 1;
+  justify-content: center;
+  border: none;
+  border-radius: 15px;
+  background: rgba(28, 28, 27, 0.60);
+  backdrop-filter: blur(100px);
+  .input-container {
+    display: flex;
+
+    
+    #location-search {
+      width: 100%;
+      background-color: rgb(28, 28, 27, 0.55);
+      border: none;
+      outline: none;
+      border-radius: 20px;
+      margin: 10px 15px;
+      color: white;
+      padding: 10px 15px;
+      padding-right: 50px;
+
+      font-size: 1em;
+      font-weight: 500;
+      
+    }
+  
+  .search-btn {
+    position: absolute;
+
+    right: 10px;
+    height: 35px;
+    width: 35px;
+    border: none;
+    background: none;
+    display: flex;
+    cursor: pointer;
+    margin: 15px 5px;
+  }  
+  .material-symbols-outlined {
+      
+      color: white;
+  }
+} 
+}
+
+
+.weather-container {
+  margin: 20px;
+}
+
+.location-date-container {
+  display: flex;
+  gap: 10px;
+  .location-label {
+    font-size: 20px;
+    margin-top: 3px;
+  }
+  #location-icon {
+    font-size: 30px;
+  }
+  .today-date-label {
+    text-align: right;
+    margin-top: 6px;
+    font-size: 15px;
+  }
+  .location {
+    display: flex;
+    flex: 1;
+    gap: 5px;
+  }
+  
+}
+
+.weather-div1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-left: 10px;
+  margin-top: 20px;
+
+.weather-overview-info {
+    grid-column: 1;
+    margin-top: 30px; 
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 20px;
+    text-align: center;
+    .conditions-label {
+      font-size: 22spx;
+    }
+  }
+
+  #weather-overview-icon {
+    grid-column: 2;
+    height: 9rem;
+    
+  }
+
+}
+
+.condition-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.weather-details {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-size: 20px;
+  gap: 17px;
+  text-align: center;
+ 
+}
+
+.forecast-container {
+  display: flex;
+  overflow: scroll;
+  margin-top: 35px;
+  margin-left: 20px;
+  margin-right: 20px;
+  gap: 10px;
+  font-size: 20px;
+  
+  .forecast-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .forecast-icon {
+    height: 120px;
+    width: auto;
+  }
+}
