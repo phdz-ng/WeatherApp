@@ -69,7 +69,7 @@ export async function renderWeather(location) {
     console.log(data)
 
     WeatherContainer.style.display = "block";
-    forecastContainer.style.display = "flex";
+    ForecastContainer.style.display = "flex";
     firstPrompt.style.display = "none";
 
     locationLabel.textContent = data.location
